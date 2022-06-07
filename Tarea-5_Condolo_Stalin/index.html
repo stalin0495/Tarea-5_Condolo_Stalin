@@ -1,0 +1,103 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="index.js"></script>
+</head>
+
+<body>
+<style>
+    body{
+            margin: 0px;
+            background-color: #f3f3f3
+        } *
+        {
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            height: 70px;
+            margin: 0 auto;
+            margin-top: 50px;
+            display: flex;
+            
+        }
+        .header-first-colum{
+            width: 80%;
+           
+        }
+        .header-second-colum{
+            width: 20%;
+            
+
+        }
+        .button{
+            background-color: rgb(255 113 137);
+            padding: 5px;
+            border-radius: 6px;
+            border: 0px;
+            color: white;
+            width: 100%;
+        }
+        .container-list {
+            max-width: 800px;
+            background-color: #ffffff;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            grid-template-columns:50% 50%;
+            grid-auto-columns: (100px, auto);
+            
+            
+        }
+        .item-element{
+            width: 100%;
+            height: 50px;
+            border: 1px solid rgb(218, 218, 218);
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 21px 2px  rgb(213 213 213 / 75%); ;
+            display: flex;
+        }
+        .item-element-content{
+            width: 80%;
+        }
+        .item-element-content h2 {
+            font-size: 20px;
+            line-height: 20px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            margin-left: 20px;
+            font-weight:lighter;
+        }
+        .action-button{
+            background-color: transparent;
+            padding: 10px;
+            border-radius: 6px;
+            border: 6px;
+            color: rgb(212, 63, 155);
+            margin-top: 8px;
+        }
+</style>
+    <div class="container">
+        <div class="header-first-colum"><label>Listado de tareas</label></div>
+        <div class="header-second-colum">
+            <button class="button"> <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"></path></svg>
+            Nueva Tarea        
+            </button>
+        </div> 
+    </div>
+        <div class="container-list">
+            <div class="item-element">
+                <div class="item-element-content">
+                    <h2>Cargando tareas....</h2>
+                </div>
+            </div>
+        </div>
+</body>                                   
+</html>
